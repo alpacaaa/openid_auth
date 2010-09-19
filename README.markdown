@@ -30,7 +30,7 @@ Just make sure it is writeable.
 Remember to initialize modules.
 
 	cd extensions
-	git checkout git://github.com/alpacaaa/openid_auth.git
+	git clone git://github.com/alpacaaa/openid_auth.git
 	cd openid_auth
 	git submodule update --init
 
