@@ -6,7 +6,8 @@ This is a Symphony CMS extension that allow users to authenticate with their Ope
 
 - Author: Marco Sampellegrini ([alpacaaa](http://github.com/alpacaaa/))
 - Github repository: http://github.com/alpacaaa/openid_auth/
-- Release date: 19th September 2010
+- Release date: 9th February 2011
+- Version: 0.2
 
 
 ## Installation

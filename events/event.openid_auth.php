@@ -10,8 +10,8 @@
 					 'author' => array(
 							'name' => 'Marco Sampellegrini',
 							'email' => 'm@rcosa.mp'),
-					 'version' => '1.0',
-					 'release-date' => '2010-09-19');	
+					 'version' => '1.1',
+					 'release-date' => '2011-02-09');	
 		}
 
 		public static function allowEditorToParse(){
@@ -124,7 +124,7 @@
 			}
 
 			require_once TOOLKIT. '/class.extensionmanager.php';
-			$em = new ExtensionManager(Frontend::instance());
+			$em = new ExtensionManager(Symphony::Engine());
 
 			$em->notifyMembers(
 				'openidAuthComplete', '/frontend/',	array(

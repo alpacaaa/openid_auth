@@ -8,8 +8,8 @@
 
 		public function about(){
 			return array('name' => 'OpenID Authentication',
-						 'version' => '0.1',
-						 'release-date' => '2010-09-19',
+						 'version' => '0.2',
+						 'release-date' => '2011-02-09',
 						 'author' => array('name' => 'Marco Sampellegrini',
 										   'email' => 'm@rcosa.mp')
 				 		);
