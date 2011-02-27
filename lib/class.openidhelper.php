@@ -1,5 +1,9 @@
 <?php
 
+	$path = ini_get('include_path');
+	$path = $path. ':'. EXTENSIONS. '/openid_auth/lib/php-openid';
+	ini_set('include_path', $path);
+
 	require_once "Auth/OpenID/Consumer.php";
 	require_once "Auth/OpenID/FileStore.php";
 	require_once "Auth/OpenID/SReg.php";

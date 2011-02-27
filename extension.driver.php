@@ -1,9 +1,5 @@
 <?php
 
-	$path = ini_get('include_path');
-	$path = $path. ':'. EXTENSIONS. '/openid_auth/lib/php-openid';
-	ini_set('include_path', $path);
-
 	class Extension_Openid_Auth extends Extension{
 
 		public function about(){
