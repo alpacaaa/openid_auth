@@ -6,7 +6,7 @@ This is a Symphony CMS extension that allow users to authenticate with their Ope
 
 - Author: Marco Sampellegrini ([alpacaaa](http://github.com/alpacaaa/))
 - Github repository: http://github.com/alpacaaa/openid_auth/
-- Release date: 9th February 2011
+- Release date: 14th April 2011
 - Version: 0.2
 
 
@@ -92,8 +92,8 @@ This method is ok only when you have optional fields but in fact should be avoid
 Add a new entry to your config file that looks like this:
 
 	'openid-auth' => array(
-		'sreg-required-fields' => array('fullname', 'dob'),
-		'sreg-optional-fields' => array('language')
+		'sreg-required-fields' => 'fullname, dob',
+		'sreg-optional-fields' => 'language'
 	),
 
 Yeah, that was easy.
@@ -107,3 +107,13 @@ For an example callback, have a look at `extension.driver.php`.
 Basically, it just provides the identifier and the simple registration data, if any.
 This is useful to store the user in your database, or associate his/her OpenID with
 an already existing member.
+
+
+### Known Issues
+
+There's an issue with google apps authentication which the awesome [Stephen has spotted](http://symphony-cms.com/discuss/thread/51831/1/#position-20).
+
+
+### Integration with members extension
+
+This [simple extension](https://gist.github.com/868021) provides a basic integration with members extension.

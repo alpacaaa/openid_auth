@@ -11,7 +11,7 @@
 							'name' => 'Marco Sampellegrini',
 							'email' => 'm@rcosa.mp'),
 					 'version' => '1.1',
-					 'release-date' => '2011-02-09');	
+					 'release-date' => '2011-04-14');
 		}
 
 		public static function allowEditorToParse(){
@@ -153,6 +153,9 @@
 			);
 
 			if (!is_array($options)) return $default;
+
+			foreach ($options as $k => $v)
+				$options[$k] = array_map('trim', explode(',', $v));
 
 			return array_merge($default, array_filter(array(
 				'required' => $options['sreg-required-fields'],

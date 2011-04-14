@@ -5,7 +5,7 @@
 		public function about(){
 			return array('name' => 'OpenID Authentication',
 						 'version' => '0.2',
-						 'release-date' => '2011-02-09',
+						 'release-date' => '2011-04-14',
 						 'author' => array('name' => 'Marco Sampellegrini',
 										   'email' => 'm@rcosa.mp')
 				 		);
