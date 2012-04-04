@@ -1,17 +1,8 @@
 <?php
 
-	class Extension_Openid_Auth extends Extension{
-
-		public function about(){
-			return array('name' => 'OpenID Authentication',
-						 'version' => '0.2',
-						 'release-date' => '2011-04-14',
-						 'author' => array('name' => 'Marco Sampellegrini',
-										   'email' => 'm@rcosa.mp')
-				 		);
-		}
+	class Extension_Openid_Auth extends Extension {
 		
-		public function getSubscribedDelegates(){
+		public function getSubscribedDelegates() {
 			return array(
 				array(
 					'page' => '/frontend/',

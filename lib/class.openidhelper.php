@@ -89,7 +89,7 @@
 		{
 			$options = Symphony::Configuration()->get('openid-auth');
 			if (is_null($options) || is_null($options['store-path']))
-			{			
+			{
 				return EXTENSIONS. '/openid_auth/id_store';
 			}
 

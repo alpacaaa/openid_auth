@@ -6,8 +6,8 @@ This is a Symphony CMS extension that allow users to authenticate with their Ope
 
 - Author: Marco Sampellegrini ([alpacaaa](http://github.com/alpacaaa/))
 - Github repository: http://github.com/alpacaaa/openid_auth/
-- Release date: 14th April 2011
-- Version: 0.2
+- Release date: 4th April 2012
+- Version: 0.3
 
 
 ## Installation
@@ -111,9 +111,11 @@ an already existing member.
 
 ### Known Issues
 
-There's an issue with google apps authentication which the awesome [Stephen has spotted](http://symphony-cms.com/discuss/thread/51831/1/#position-20).
+There's an issue with google apps authentication which the awesome [Stephen has spotted](http://symphony-cms.com/discuss/thread/51831/1/#position-20).  
+It might have been fixed since I initially wrote the extension, we'll never know :\
 
 
 ### Integration with members extension
 
-This [simple extension](https://gist.github.com/868021) provides a basic integration with members extension.
+This [simple extension](https://gist.github.com/868021) provides a basic integration with members extension.  
+It has been further developed by **@bauhouse** so go checkout [the repo](https://github.com/domain7/members_openid).

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="openid_auth" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>OpenID Authentication</name>
+	<description>Let users authenticate with OpenID</description>
+	<repo type="github">https://github.com/alpacaaa/openid_auth</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/51831/</url>
+	<types>
+		<type>Membership</type>
+	</types>
+	<authors>
+		<author>
+			<name github="alpacaaa" symphony="alpacaaa">Marco Sampellegrini</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.3" date="2012-04-04" min="2.3" />
+		<release version="0.2" date="2010-02-09" min="2.1.0" />
+	</releases>
+</extension>

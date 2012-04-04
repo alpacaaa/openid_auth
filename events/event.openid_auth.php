@@ -10,15 +10,15 @@
 					 'author' => array(
 							'name' => 'Marco Sampellegrini',
 							'email' => 'm@rcosa.mp'),
-					 'version' => '1.1',
-					 'release-date' => '2011-04-14');
+					 'version' => '1.2',
+					 'release-date' => '2012-04-04');
 		}
 
 		public static function allowEditorToParse(){
 			return false;
 		}
 
-		public function load(){			
+		public function load(){	
 			$root = new XMLElement('openid-auth');
 			$providers_xml = new XMLElement('providers');
 			$providers = self::getProviders();
@@ -124,9 +124,7 @@
 			}
 
 			require_once TOOLKIT. '/class.extensionmanager.php';
-			$em = new ExtensionManager(Symphony::Engine());
-
-			$em->notifyMembers(
+			Symphony::ExtensionManager()->notifyMembers(
 				'openidAuthComplete', '/frontend/',	array(
 					'openid-data' => $openid_data
 			));
@@ -168,7 +166,7 @@
 				<p>
 					This event let users authenticate through OpenID.<br />
 					It can be used in conjunction with the example event provided by the extension: 
-					<a href="'. URL. '/symphony/blueprints/events/info/openid_data/">OpenID Data</a>.
+					<a href="'. SYMPHONY_URL. 'blueprints/events/info/openid_data/">OpenID Data</a>.
 				</p>
 				<p>This is an example of the form markup you can use on your front end.</p>
 				<pre class="XML"><code>
